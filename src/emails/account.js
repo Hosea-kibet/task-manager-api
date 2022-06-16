@@ -5,15 +5,13 @@ function transporter() {
         service: process.env.NODEMAILER_SERVICE,
         //service:"Gmail",
         auth: {
-             user: process.env.NODEMAILER_USER , 
+            user: process.env.NODEMAILER_USER , 
             //user:"kibethosea6@gmail.com" ,
              pass: process.env.NODEMAILER_PASS
             //pass:"pwjmixozlheryhoe" 
         }
     })
 }
-
-transporter(process.env.NODEMAILER_TRANSPORTER_FUNCTION)
  
 function sendWelcomeEmail(email, name) {
     const transporterObject = transporter()

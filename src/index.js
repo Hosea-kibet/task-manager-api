@@ -8,6 +8,9 @@ const { json } = require("express");
 const app = express();
 const port = process.env.PORT 
 
+//mongodb+srv://Mbebo:hosea1976@cluster0.pymc3t7.mongodb.net/
+//mongodb://127.0.0.1:27017/task-manager-api"
+
 // const multer = require('multer')
 
 // const upload = multer({

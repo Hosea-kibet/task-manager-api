@@ -7,9 +7,7 @@ const {sendWelcomeEmail,sendDeleteEmail} = require('../emails/account')
 const router = new express.Router();
 
 
-
-
-router.post("/users", async (req, res) => {
+router.post("/users",async (req, res) => {
   const user = new User(req.body);
   try {
     await user.save()
